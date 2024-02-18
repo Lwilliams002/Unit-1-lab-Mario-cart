@@ -94,7 +94,9 @@ class ViewController: UIViewController,
   // Exercise 4: Implement the `moveKart` function to move the kart based on the
   // location of the location of the gesture in the view
   private func moveKart(using gestureRecognizer: UIPanGestureRecognizer) {
-    
+      let location = gestureRecognizer.location(in: view)
+      let kartview = gestureRecognizer.view
+      kartview?.center = location
   }
   
   @IBAction func didLongPressBackground(_ sender: UILongPressGestureRecognizer) {
