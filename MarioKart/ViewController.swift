@@ -75,7 +75,7 @@ class ViewController: UIViewController,
     // Exercise 3: Change the scale of the kart
     // Tip: Use the `scale` function below
     // YOUR CODE HERE
-      
+      scale(kart: sender.view, gestureRecognizer: sender)
   }
   
   private func scale(kart: UIView?,
@@ -94,7 +94,7 @@ class ViewController: UIViewController,
   // Exercise 4: Implement the `moveKart` function to move the kart based on the
   // location of the location of the gesture in the view
   private func moveKart(using gestureRecognizer: UIPanGestureRecognizer) {
-    // YOUR CODE HERE
+    
   }
   
   @IBAction func didLongPressBackground(_ sender: UILongPressGestureRecognizer) {
